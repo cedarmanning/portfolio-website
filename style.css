@@ -35,7 +35,7 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.01em; }
     height: 2.6rem;
     border-radius: 50%;
     /* ---------- Background Color of Icon ---------- */
-    background: grey;
+    background: var(--sage);
     font-weight: 800;
     font-size: 1rem;
     letter-spacing: .02em;
@@ -44,7 +44,7 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.01em; }
 /* ---------- Hero ---------- */
 .hero {
     background: var(--cocoa);
-    padding: clamp(2rem, 7vw, 4.5rem) 0 clamp(2.5rem, 8vw, 5rem);
+    padding: clamp(1rem, 4vw, 1rem) 0 clamp(1rem, 4vw, 1rem);
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 .hero-title { font-size: clamp(2.5rem, 9vw, 4.5rem); margin-bottom: .5rem; }

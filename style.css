@@ -23,7 +23,10 @@
 h1, h2, h3 { font-weight: 800; letter-spacing: -0.01em; }
 
 /* ---------- Navigation ---------- */
-.site-nav { background: var(--cocoa); padding-block: .6rem; }
+.site-nav { 
+    background: var(--cocoa); 
+    padding-block: .6rem; 
+}
 .site-nav .nav-link { font-weight: 700; padding: .5rem 1rem; border-radius: 999px; }
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus-visible { background: rgba(255, 255, 255, .12); }
@@ -46,6 +49,7 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.01em; }
     background: var(--cocoa);
     padding: clamp(1rem, 4vw, 1rem) 0 clamp(1rem, 4vw, 1rem);
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    background-image: url('treesbackground.png');
 }
 .hero-title { font-size: clamp(2.5rem, 9vw, 4.5rem); margin-bottom: .5rem; }
 .hero-sub { font-size: clamp(1rem, 3.5vw, 1.3rem); opacity: .85; }
@@ -154,15 +158,40 @@ section[id] { scroll-margin-top: 4.5rem; }
 
 /* ---------- About & Contact ---------- */
 .about-card,
-.contact-card {
+.contact-card,
+.experience-card {
     border-radius: var(--radius-lg);
     padding: clamp(1.75rem, 5vw, 3rem);
     text-align: center;
 }
-.about-card { background: var(--cream); }
-.about-card p { max-width: 38rem; margin-inline: auto; }
-.contact-card { background: var(--sage-light); }
 
+.about-card,.experience-card { background: var(--cream); }
+.about-card p { max-width: 38rem; margin-inline: auto; }
+.contact-card { 
+    background: var(--sage-light); 
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.experience-card { 
+    border-color: var(--mauve);
+    border-width: 3px;
+    border-style: solid;
+}
+
+.experience-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.experience-card li {
+  font-weight: bold;
+}
+
+.experience-card li p {
+  font-weight: normal;
+}
 /* Buttons */
 .btn-earth {
     --bs-btn-color: #fff;
@@ -190,6 +219,7 @@ section[id] { scroll-margin-top: 4.5rem; }
     background: var(--cocoa);
     padding: 1.5rem 0;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+
 }
 
 a:focus-visible, button:focus-visible, video:focus-visible {
